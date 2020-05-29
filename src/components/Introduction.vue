@@ -2,8 +2,8 @@
   <section class="introduction">
     <h1>Hello</h1>
     <p>
-      I am passionate about web develop&shy;ment, NoSQL data&shy;bases, and
-      Oxford com&shy;mas.
+      I am passionate about web develop&shy;ment, NoSQL data&shy;bases, and the
+      Oxford Com&shy;ma.
     </p>
   </section>
 </template>
