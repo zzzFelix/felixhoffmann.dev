@@ -1,6 +1,6 @@
 <template>
   <section class="contact-info">
-    <p>Shoot me an email</p>
+    <p>Shoot me a message</p>
     <p>
       <a href="mailto:hello@felixhoffmann.dev">hello@felixhoffmann.dev</a>
     </p>
