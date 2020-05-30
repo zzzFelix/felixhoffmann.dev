@@ -14,11 +14,16 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import {
   faVuejs,
-  faJsSquare,
+  faJs,
   faHtml5,
   faCss3,
   faAws,
-  faGithub
+  faGithub,
+  faFigma,
+  faFontAwesome,
+  faSass,
+  faDocker,
+  faJava
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import Introduction from "@/components/Introduction.vue";
@@ -28,7 +33,19 @@ import TechStack from "@/components/TechStack.vue";
 import ContactInfo from "@/components/ContactInfo.vue";
 
 library.add(faExternalLinkAlt);
-library.add(faVuejs, faJsSquare, faHtml5, faCss3, faAws, faGithub);
+library.add(
+  faVuejs,
+  faJs,
+  faHtml5,
+  faCss3,
+  faAws,
+  faGithub,
+  faFigma,
+  faFontAwesome,
+  faSass,
+  faDocker,
+  faJava
+);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 @Component({

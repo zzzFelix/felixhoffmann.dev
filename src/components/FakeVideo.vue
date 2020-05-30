@@ -1,9 +1,8 @@
 <template>
   <section class="fake-video">
     <img
-      src="./../assets/fake-video.jpg"
+      src="./../assets/la-sunset.jpg"
       alt="Fake video of a Los Angeles sunset"
-      @click="showAlert"
     />
     <p>
       Image courtesy of
@@ -21,13 +20,7 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 
-@Component({
-  methods: {
-    showAlert() {
-      alert("I am sorry—everything on this website is fake");
-    }
-  }
-})
+@Component
 export default class FakeVideo extends Vue {}
 </script>
 

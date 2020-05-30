@@ -2,14 +2,20 @@
   <section class="stories">
     <h2>Stories</h2>
     <StoryLink
-      title="Never mind Google Fonts"
-      description="System fonts make for great UX. And they speed up your app. 🚀"
+      title="En vogue: narrow web design"
+      description="Building for mobile AND desktop? Ain't nobody got time for that. Plus: media queries are a pain."
+      url="https://google.com"
+      url-title="nytimes.com"
+    />
+    <StoryLink
+      title="This is but a mock"
+      description="There will be content eventually. I am a lazy person."
       url="https://google.com"
       url-title="Medium.com"
     />
     <StoryLink
-      title="This is but a mock"
-      description="There will be content eventually. A desktop version is also in the making."
+      title="Why is there a picture of a sunset?"
+      description="Nothing on this website makes any sense. Nobody loves working with Javascript."
       url="https://google.com"
       url-title="Medium.com"
     />
