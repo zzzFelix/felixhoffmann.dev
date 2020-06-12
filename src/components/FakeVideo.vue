@@ -28,9 +28,10 @@ export default class FakeVideo extends Vue {}
 @import "../variables.scss";
 
 .fake-video {
-  margin-top: -4.6875rem;
+  margin: -4.6875rem auto 0;
   text-align: center;
   padding: 0 $padding-narrow;
+  max-width: 666px;
 
   img {
     box-shadow: $box-shadow;

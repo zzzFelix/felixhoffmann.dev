@@ -1,10 +1,13 @@
 <template>
   <section class="introduction">
-    <h1>Hello</h1>
-    <p>
-      I am passionate about web develop&shy;ment, NoSQL data&shy;bases, and the
-      Oxford Com&shy;ma.
-    </p>
+    <div class="introduction-inner">
+      <h1>Hello</h1>
+      <p>
+        I am Felix Hoffmann, a soft&shy;ware engineer passionate about web
+        develop&shy;ment, algorithms and data struc&shy;tures, and NoSQL
+        data&shy;bases.
+      </p>
+    </div>
   </section>
 </template>
 
@@ -21,18 +24,25 @@ export default class Introduction extends Vue {}
 .introduction {
   color: white;
   background: $trump;
-  padding: (2 * $padding-wide) $padding-wide 9em;
   text-align: left;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 
-  h1 {
-    font-size: 4.375rem;
-    font-weight: 200;
-  }
+  .introduction-inner {
+    padding: (2 * $padding-wide) $padding-wide 9em;
+    width: 100%;
+    max-width: 62.5em;
 
-  p {
-    hyphens: manual;
-    //noinspection CssInvalidFunction
-    width: clamp(12em, 65%, 30em);
+    h1 {
+      font-size: 4.375rem;
+      font-weight: 200;
+    }
+
+    p {
+      hyphens: manual;
+      width: clamp(15em, 60%, 30em);
+    }
   }
 }
 </style>

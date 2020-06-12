@@ -1,16 +1,19 @@
 <template>
   <section class="tech-stack">
-    <p class="title">I love working with</p>
+    <p class="title">
+      I love working with
+    </p>
     <p>
-      <font-awesome-icon :icon="['fab', 'vuejs']" />
-      <font-awesome-icon :icon="['fab', 'js']" />
-      <font-awesome-icon :icon="['fab', 'html5']" />
-      <font-awesome-icon :icon="['fab', 'css3']" />
-      <font-awesome-icon :icon="['fab', 'aws']" />
-      <font-awesome-icon :icon="['fab', 'github']" />
-      <font-awesome-icon :icon="['fab', 'docker']" />
-      <font-awesome-icon :icon="['fab', 'font-awesome']" />
-      <font-awesome-icon :icon="['fab', 'sass']" />
+      <span><em>{</em> {{ selectedTechnology || "select technology" }} <em>}</em></span>
+    </p>
+    <p>
+      <font-awesome-icon
+        v-for="tech in techStack"
+        :key="tech.name"
+        :icon="['fab', tech.icon]"
+        @click="selectTechnology(tech.name)"
+        :class="{ selected: tech.name === selectedTechnology }"
+      />
     </p>
   </section>
 </template>
@@ -19,7 +22,26 @@
 import { Component, Vue } from "vue-property-decorator";
 
 @Component
-export default class TechStack extends Vue {}
+export default class TechStack extends Vue {
+  selectedTechnology = "";
+
+  techStack = [
+    { name: "Vue.js", icon: "vuejs" },
+    { name: "Javascript", icon: "js" },
+    { name: "Amazon Web Services", icon: "aws" },
+    { name: "Github", icon: "github" },
+    { name: "Docker", icon: "docker" },
+    { name: "Sass", icon: "sass" }
+  ];
+
+  selectTechnology(technology: string) {
+    if (this.selectedTechnology === technology) {
+      this.selectedTechnology = "";
+    } else {
+      this.selectedTechnology = technology;
+    }
+  }
+}
 </script>
 
 <style scoped lang="scss">
@@ -33,7 +55,11 @@ section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    font-weight: 100;
+    font-weight: 200;
+
+    em {
+      color: $trump;
+    }
 
     &.title {
       color: $dark-knight;
@@ -44,8 +70,10 @@ section {
       color: $hamburg-skies;
       font-size: 1.5rem;
       margin: 0.5em 0.7em 0;
+      cursor: pointer;
 
-      &:hover {
+      &:hover,
+      &.selected {
         color: $trump;
       }
     }

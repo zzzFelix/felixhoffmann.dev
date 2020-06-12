@@ -34,6 +34,10 @@ import { Component, Vue } from "vue-property-decorator";
     urlTitle: {
       type: String,
       required: true
+    },
+    imageUrl: {
+      type: String,
+      required: false
     }
   }
 })

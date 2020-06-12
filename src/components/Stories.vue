@@ -1,24 +1,14 @@
 <template>
   <section class="stories">
-    <h2>Stories</h2>
-    <StoryLink
-      title="En vogue: narrow web design"
-      description="Building for mobile AND desktop? Ain't nobody got time for that. Plus: media queries are a pain."
-      url="https://google.com"
-      url-title="nytimes.com"
-    />
-    <StoryLink
-      title="This is but a mock"
-      description="There will be content eventually. I am a lazy person."
-      url="https://google.com"
-      url-title="Medium.com"
-    />
-    <StoryLink
-      title="Why is there a picture of a sunset?"
-      description="Nothing on this website makes any sense. Nobody loves working with Javascript."
-      url="https://google.com"
-      url-title="Medium.com"
-    />
+    <h2>Projects</h2>
+    <div class="stories-inner">
+      <StoryLink
+        title="This is but a mock"
+        description="There will be content eventually. I am a lazy person."
+        url="https://google.com"
+        url-title="Medium.com"
+      />
+    </div>
   </section>
 </template>
 
@@ -39,6 +29,16 @@ export default class Stories extends Vue {}
 
 .stories {
   padding: $padding-wide;
+  max-width: 1000px;
+  margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .stories-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.375em;
+  }
 }
 
 h2 {

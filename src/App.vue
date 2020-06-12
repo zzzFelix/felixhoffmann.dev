@@ -1,10 +1,6 @@
 <template>
   <div id="app">
-    <Introduction />
-    <FakeVideo />
-    <Stories />
-    <TechStack />
-    <ContactInfo />
+    <router-view></router-view>
   </div>
 </template>
 
@@ -26,11 +22,6 @@ import {
   faJava
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import Introduction from "@/components/Introduction.vue";
-import Stories from "@/components/Stories.vue";
-import FakeVideo from "@/components/FakeVideo.vue";
-import TechStack from "@/components/TechStack.vue";
-import ContactInfo from "@/components/ContactInfo.vue";
 
 library.add(faExternalLinkAlt);
 library.add(
@@ -48,15 +39,7 @@ library.add(
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
-@Component({
-  components: {
-    ContactInfo,
-    TechStack,
-    Introduction,
-    FakeVideo,
-    Stories
-  }
-})
+@Component
 export default class App extends Vue {}
 </script>
 
@@ -160,8 +143,6 @@ video {
   background-color: $mud;
   color: $dark-knight;
   min-height: 100vh;
-  //noinspection CssInvalidFunction
-  width: clamp(20em, 100%, 30em);
   margin: auto;
 
   a {
