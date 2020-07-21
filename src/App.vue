@@ -11,15 +11,14 @@ import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import {
   faVuejs,
   faJs,
-  faHtml5,
-  faCss3,
   faAws,
   faGithub,
   faFigma,
-  faFontAwesome,
   faSass,
   faDocker,
-  faJava
+  faJava,
+  faReact,
+  faNode
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
@@ -27,15 +26,14 @@ library.add(faExternalLinkAlt);
 library.add(
   faVuejs,
   faJs,
-  faHtml5,
-  faCss3,
   faAws,
   faGithub,
   faFigma,
-  faFontAwesome,
   faSass,
   faDocker,
-  faJava
+  faJava,
+  faReact,
+  faNode
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 

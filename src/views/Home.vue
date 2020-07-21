@@ -3,7 +3,7 @@
     <Introduction />
     <FakeVideo />
     <Stories />
-    <!-- <TechStack /> -->
+    <TechStack />
     <ContactInfo />
   </section>
 </template>
