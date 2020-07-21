@@ -4,15 +4,11 @@
       I love working with
     </p>
     <p>
-      <span><em>{</em> {{ selectedTechnology || "select technology" }} <em>}</em></span>
-    </p>
-    <p>
       <font-awesome-icon
         v-for="tech in techStack"
         :key="tech.name"
+        :title="tech.name"
         :icon="['fab', tech.icon]"
-        @click="selectTechnology(tech.name)"
-        :class="{ selected: tech.name === selectedTechnology }"
       />
     </p>
   </section>
@@ -27,20 +23,16 @@ export default class TechStack extends Vue {
 
   techStack = [
     { name: "Vue.js", icon: "vuejs" },
+    { name: "React", icon: "react" },
     { name: "Javascript", icon: "js" },
+    { name: "Node.js", icon: "node" },
     { name: "Amazon Web Services", icon: "aws" },
     { name: "Github", icon: "github" },
     { name: "Docker", icon: "docker" },
-    { name: "Sass", icon: "sass" }
+    { name: "Sass", icon: "sass" },
+    { name: "Java", icon: "java" },
+    { name: "Figma", icon: "figma" }
   ];
-
-  selectTechnology(technology: string) {
-    if (this.selectedTechnology === technology) {
-      this.selectedTechnology = "";
-    } else {
-      this.selectedTechnology = technology;
-    }
-  }
 }
 </script>
 
@@ -70,10 +62,8 @@ section {
       color: $hamburg-skies;
       font-size: 1.5rem;
       margin: 0.5em 0.7em 0;
-      cursor: pointer;
 
-      &:hover,
-      &.selected {
+      &:hover {
         color: $trump;
       }
     }

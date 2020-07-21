@@ -9,9 +9,11 @@
       <a
         href="https://unsplash.com/@nate_dumlao"
         target="_blank"
+        rel="noopener noreferrer"
         id="dark-link"
       >
-        Nathan Dumlao
+        Nathan Dumlao 
+        <font-awesome-icon :icon="['fas', 'external-link-alt']" />
       </a>
     </p>
   </section>

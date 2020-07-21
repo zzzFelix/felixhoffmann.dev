@@ -6,7 +6,7 @@
     </p>
     <p class="link">
       Read at
-      <a :href="url" target="_blank">
+      <a :href="url" target="_blank" rel="noopener noreferrer">
         {{ urlTitle }}
         <font-awesome-icon :icon="['fas', 'external-link-alt']" />
       </a>
