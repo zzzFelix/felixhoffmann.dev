@@ -1,7 +1,7 @@
 <template>
   <section class="tech-stack">
     <p class="title">
-      I love working with
+      Made with
     </p>
     <p>
       <font-awesome-icon
@@ -23,14 +23,10 @@ export default class TechStack extends Vue {
 
   techStack = [
     { name: "Vue.js", icon: "vuejs" },
-    { name: "React", icon: "react" },
     { name: "Javascript", icon: "js" },
     { name: "Node.js", icon: "node" },
-    { name: "Amazon Web Services", icon: "aws" },
     { name: "Github", icon: "github" },
-    { name: "Docker", icon: "docker" },
     { name: "Sass", icon: "sass" },
-    { name: "Java", icon: "java" },
     { name: "Figma", icon: "figma" }
   ];
 }

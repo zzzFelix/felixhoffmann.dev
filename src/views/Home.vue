@@ -25,7 +25,7 @@ import ContactInfo from "@/components/ContactInfo.vue";
     Stories
   }
 })
-export default class App extends Vue {}
+export default class Home extends Vue {}
 </script>
 
 <style lang="scss"></style>
