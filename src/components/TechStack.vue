@@ -24,7 +24,6 @@ export default class TechStack extends Vue {
   techStack = [
     { name: "Vue.js", icon: "vuejs" },
     { name: "Javascript", icon: "js" },
-    { name: "Node.js", icon: "node" },
     { name: "Github", icon: "github" },
     { name: "Sass", icon: "sass" },
     { name: "Figma", icon: "figma" }
