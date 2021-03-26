@@ -7,14 +7,9 @@
       </p>
     </div>
     <div class="social">
-      <div>
-        <p>Find me on</p>
-        <p>
-          <a href="https://stackoverflow.com/users/4598786/felix">Stack Overflow</a>
-        </p>
-      </div>
+      <p>Find me on</p>
       <p>
-        <a href="https://github.com/zzzFelix">GitHub</a>
+        <a href="https://github.com/zzzFelix" target="_blank" rel="noopener noreferrer">GitHub</a>
       </p>
     </div>
   </section>
@@ -39,10 +34,8 @@ section {
   max-width: 1000px;
 
   .social {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    column-gap: 1em;
-    align-items: end;
+    display: flex;
+    flex-direction: column;
   }
 
   p {
