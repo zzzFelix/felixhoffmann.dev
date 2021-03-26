@@ -3,28 +3,16 @@
     <h2>Projects</h2>
     <div class="stories-inner">
       <StoryLink
-        title="This is but a mock"
-        description="There will be content eventually. I am a lazy person."
-        url="https://google.com"
-        url-title="Medium.com"
+        title="Sorting Algorithm Visualizer"
+        description="Sort books by color using different sorting algorithms. Some slow, others even slower."
+        url="#/book-sort"
+        url-title="felixhoffman.dev"
       />
       <StoryLink
-        title="This is but a mock"
-        description="There will be content eventually. I am a lazy person."
-        url="https://google.com"
-        url-title="Medium.com"
-      />
-      <StoryLink
-        title="This is but a mock"
-        description="There will be content eventually. I am a lazy person."
-        url="https://google.com"
-        url-title="Medium.com"
-      />
-      <StoryLink
-        title="This is but a mock"
-        description="There will be content eventually. I am a lazy person."
-        url="https://google.com"
-        url-title="Medium.com"
+        title="Kona Kompanion"
+        description="iOS app tailored to Kona drivers, making use of Hyundai's Bluelink API."
+        url-title="Coming soon"
+        :inactive="true"
       />
     </div>
   </section>

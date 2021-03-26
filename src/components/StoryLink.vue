@@ -1,17 +1,18 @@
 <template>
-  <article>
-    <h1>{{ title }}</h1>
-    <p>
-      {{ description }}
-    </p>
-    <p class="link">
-      Read at
-      <a :href="url" target="_blank" rel="noopener noreferrer">
-        {{ urlTitle }}
-        <font-awesome-icon :icon="['fas', 'external-link-alt']" />
-      </a>
-    </p>
-  </article>
+  <a :href="url" target="_blank" rel="noopener noreferrer" class="no-styles">
+    <article :class="{ inactive: inactive }">
+      <h1>{{ title }}</h1>
+      <p>
+        {{ description }}
+      </p>
+      <p class="link">
+        <a :href="url" target="_blank" rel="noopener noreferrer" :class="{ 'no-styles': inactive }">
+          {{ urlTitle }}
+          <font-awesome-icon :icon="['fas', 'external-link-alt']" v-if="!inactive" />
+        </a>
+      </p>
+    </article>
+  </a>
 </template>
 
 <script lang="ts">
@@ -29,14 +30,18 @@ import { Component, Vue } from "vue-property-decorator";
     },
     url: {
       type: String,
-      required: true
+      required: false
     },
     urlTitle: {
       type: String,
-      required: true
+      required: false
     },
     imageUrl: {
       type: String,
+      required: false
+    },
+    inactive: {
+      type: Boolean,
       required: false
     }
   }
@@ -47,11 +52,22 @@ export default class StoryLink extends Vue {}
 <style scoped lang="scss">
 @import "../variables.scss";
 
+a.no-styles {
+  color: $dark-knight;
+  font-weight: normal;
+  text-decoration: none;
+}
+
 article {
   background-color: white;
   box-shadow: $box-shadow;
   padding: 1em;
   margin-bottom: 1.375em;
+
+  &.inactive {
+    background-color: rgba(white, 0.6);
+    color: lighten($dark-knight, 50);
+  }
 
   h1 {
     font-weight: 600;

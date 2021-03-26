@@ -142,11 +142,11 @@ video {
   color: $dark-knight;
   min-height: 100vh;
   margin: auto;
+}
 
-  a {
-    color: $trump;
-    font-weight: 500;
-    text-decoration: none;
-  }
+a {
+  color: $trump;
+  font-weight: 500;
+  text-decoration: none;
 }
 </style>
