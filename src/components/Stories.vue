@@ -9,8 +9,8 @@
         url-title="felixhoffman.dev"
       />
       <StoryLink
-        title="Kona Kompanion"
-        description="iOS app tailored to Kona drivers, making use of Hyundai's Bluelink API."
+        title="Future Projects"
+        description="Awesome stuff in the making. This is but a placeholder. I'm lazy."
         url-title="Coming soon"
         :inactive="true"
       />
