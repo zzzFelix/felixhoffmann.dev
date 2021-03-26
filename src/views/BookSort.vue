@@ -1,5 +1,8 @@
 <template>
   <section class="bookSort">
+    <Introduction headline="Sorting Algorithm Visualizer">
+      A visualization of popular sorting algorithms using books, sorting them by color.
+    </Introduction>
     <section class="headline">
       <h2>Sort by color</h2>
       <a
@@ -46,6 +49,7 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import TechStack from "@/components/TechStack.vue";
+import Introduction from "@/components/Introduction.vue";
 import ContactInfo from "@/components/ContactInfo.vue";
 
 function getHueFromBookColor(book: Book) {
@@ -95,7 +99,8 @@ function* bubbleSort(books: Book[]) {
 @Component({
   components: {
     TechStack,
-    ContactInfo
+    ContactInfo,
+    Introduction
   }
 })
 export default class BookSort extends Vue {

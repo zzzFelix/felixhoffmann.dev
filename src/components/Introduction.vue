@@ -1,11 +1,9 @@
 <template>
   <section class="introduction">
     <div class="introduction-inner">
-      <h1>Hello</h1>
+      <h1>{{ headline }}</h1>
       <p>
-        I am Felix Hoffmann, a soft&shy;ware engineer passionate about web
-        develop&shy;ment, algorithms and data struc&shy;tures, and NoSQL
-        data&shy;bases.
+        <slot />
       </p>
     </div>
   </section>
@@ -14,7 +12,14 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 
-@Component
+@Component({
+  props: {
+    headline: {
+      type: String,
+      required: true
+    }
+  }
+})
 export default class Introduction extends Vue {}
 </script>
 

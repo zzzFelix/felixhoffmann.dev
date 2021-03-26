@@ -1,6 +1,9 @@
 <template>
   <section class="home">
-    <Introduction />
+    <Introduction
+      headline="Hello">
+      I am Felix Hoffmann, soft&shy;ware engineer passionate about web develop&shy;ment, algorithms and data struc&shy;tures, and NoSQL data&shy;bases.
+    </Introduction>
     <FakeVideo />
     <Stories />
     <TechStack />
