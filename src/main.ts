@@ -1,23 +1,8 @@
-import Vue from "vue";
-import VueRouter from 'vue-router';
-import App from "./App.vue";
-import Home from "./views/Home.vue";
-import BookSort from "./views/BookSort.vue";
+import './style.css'
 
-Vue.use(VueRouter)
+const app = document.querySelector<HTMLDivElement>('#app')!
 
-Vue.config.productionTip = false;
-
-const routes = [
-  { path: '/', component: Home },
-  { path: '/book-sort', component: BookSort }
-]
-
-const router = new VueRouter({
-  routes
-})
-
-new Vue({
-  router,
-  render: h => h(App)
-}).$mount("#app");
+app.innerHTML = `
+  <h1>Hello Vite!</h1>
+  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
+`
