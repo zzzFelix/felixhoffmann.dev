@@ -71,6 +71,10 @@
 			<p class="success">Find recipes for incredible drinks. My First steps in React.</p>
 		</article>
 	</a>
+
+	<link rel="preload" as="image" href="flame-design-science.gif">
+	<link rel="preload" as="image" href="flame-no-connection.gif">
+	<link rel="preload" as="image" href="flame-success.gif">
 </section>
 
 <style>
