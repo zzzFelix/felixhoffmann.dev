@@ -15,13 +15,31 @@
 </main>
 
 <style>
-    :global(html) {
-        scroll-snap-type: y mandatory;
-    }
+	:global(html) {
+		scroll-snap-type: y mandatory;
+	}
 
-	:global(body) {       
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	@media only screen and (max-height: 699px) {
+		:global(html) {
+			scroll-snap-type: none;
+		}
+	}
+
+	:global(body) {
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+			'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 		margin: 0;
-		color: #1B1B1C;
+		color: #1b1b1c;
+	}
+
+	:global(a) {
+		color: #1b1b1c;
+		text-decoration: none;
+	}
+	:global(main > *) {
+		padding-top: 7.6rem;
+		box-sizing: border-box;
+		height: 100vh;
+		min-height: 700px;
 	}
 </style>

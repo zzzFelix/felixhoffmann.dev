@@ -10,6 +10,7 @@
 		text-align: right;
 		padding: 3rem;
 		width: calc(100% - 3rem - 3rem);
+		z-index: 10;
 	}
 
 	a:first-of-type {

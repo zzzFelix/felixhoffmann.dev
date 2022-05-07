@@ -10,7 +10,6 @@
 
 <style>
 	section {
-		height: 100vh;
 		background-color: #e2c0d1;
 		scroll-snap-align: start;
 		display: grid;
@@ -72,14 +71,10 @@
 		align-self: end;
 		font-style: normal;
 		font-weight: 600;
-		animation: reveal 2s ease-in 0s 1;
-		animation-fill-mode: backwards;
 	}
 
 	p {
 		font-weight: 300;
-		animation: reveal 2s ease-in 0.5s 1;
-		animation-fill-mode: backwards;
 	}
 
 	span {
@@ -95,7 +90,7 @@
 		line-height: 160%;
 		letter-spacing: 0.1em;
 		text-transform: uppercase;
-		animation: reveal 2s ease-in 1.5s 1;
+		animation: reveal 2s ease-in 0s 1;
 		animation-fill-mode: backwards;
 	}
 </style>
