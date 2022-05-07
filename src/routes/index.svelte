@@ -19,7 +19,7 @@
 		scroll-snap-type: y mandatory;
 	}
 
-	@media only screen and (max-height: 699px) {
+	@media (max-height: 699px) {
 		:global(html) {
 			scroll-snap-type: none;
 		}

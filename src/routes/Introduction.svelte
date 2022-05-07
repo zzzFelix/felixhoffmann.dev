@@ -93,4 +93,10 @@
 		animation: reveal 2s ease-in 0s 1;
 		animation-fill-mode: backwards;
 	}
+
+	@media (max-height: 699px) {
+		span {
+			display: none;
+		}
+	}
 </style>
