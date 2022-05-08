@@ -15,10 +15,10 @@
 		display: grid;
 		grid-template-columns: 35% 5% 45% 15%;
 		grid-template-rows: calc(100% - 7.6rem) 7.6rem;
+		overflow: hidden;
 	}
 	img {
-		max-width: 1218px;
-		width: 100%;
+		max-width: 100%;
 		max-height: 100vh;
 		align-self: end;
 		grid-row-start: 2;
