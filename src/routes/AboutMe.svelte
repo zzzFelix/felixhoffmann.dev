@@ -1,5 +1,5 @@
 <section id="about">
-	<img src="felix-hoffmann.png" alt="Headshot of Felix Hoffmann" />
+	<img src="felix-hoffmann.webp" alt="Headshot of Felix Hoffmann" />
 	<article>
 		<h2>Hi!</h2>
 		<p>I am passionate about web development, accessibility, and algorithms and data structures.</p>
