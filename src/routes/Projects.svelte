@@ -1,80 +1,77 @@
 <script lang="ts">
 	const IMG_SUFFIX_ANIMATION = '.gif';
 	const IMG_SUFFIX_STATIC = '-static.png';
-	let lastAnimation: string | null = null;
 
 	const startAnimation = (event: any) => {
-		if (getId(event) === lastAnimation) return;
-		if (lastAnimation) {
-			stopAnimation(lastAnimation);
-		}
-		changeUrl(event);
-	};
-
-	const getId = (event: any): string | undefined => {
-		let id;
-		const classList = event.target?.classList as DOMTokenList;
-		if (classList.contains('success')) {
-			id = 'success';
-		} else if (classList.contains('design-science')) {
-			id = 'design-science';
-		} else if (classList.contains('no-connection')) {
-			id = 'no-connection';
-		}
-		return id;
-	}
-
-	const stopAnimation = (id: string) => {
-		const img = document.getElementById(id) as HTMLImageElement;
-		img.src = img.src.replace(IMG_SUFFIX_ANIMATION, IMG_SUFFIX_STATIC);
-	};
-
-	const changeUrl = (event: any) => {
-		let id;
-		const classList = event.target?.classList as DOMTokenList;
-		if (classList.contains('success')) {
-			id = 'success';
-		} else if (classList.contains('design-science')) {
-			id = 'design-science';
-		} else if (classList.contains('no-connection')) {
-			id = 'no-connection';
-		}
-		if (id != null) {
-			lastAnimation = id;
+		const id = getId(event);
+		if (id) {
 			const img = document.getElementById(id) as HTMLImageElement;
 			img.src = img.src.replace(IMG_SUFFIX_STATIC, IMG_SUFFIX_ANIMATION);
 		}
 	};
+
+	const stopAnimation = (event: any) => {
+		const id = getId(event);
+		if (id) {
+			const img = document.getElementById(id) as HTMLImageElement;
+			img.src = img.src.replace(IMG_SUFFIX_ANIMATION, IMG_SUFFIX_STATIC);
+		}
+	};
+
+	const getId = (event: any): string | undefined => {
+		return event.target?.id;
+	};
 </script>
 
 <section id="projects">
-	<a href="#not-yet" on:mouseover={startAnimation} on:focus={startAnimation} class="no-connection">
-		<article class="no-connection">
-			<h2 class="no-connection">Sorting Algorithm Visualizer</h2>
-			<img  class="no-connection" id="no-connection" src="flame-no-connection-static.png" alt="Animated cartoon character" />
-			<p class="no-connection">Sort books by color using various sorting algorithms.</p>
-		</article>
-	</a>
+	<article>
+		<h2>Sorting Algorithm Visualizer</h2>
+		<img
+			tabindex="0"
+			id="no-connection"
+			src="flame-no-connection-static.png"
+			alt="Animation of a cartoon character. Plays on focus or mouseover."
+			on:mouseover={startAnimation}
+			on:focus={startAnimation}
+			on:mouseout={stopAnimation}
+			on:blur={stopAnimation}
+		/>
+		<p>Sort books by color using various sorting algorithms.</p>
+	</article>
 
-	<a href="#not-yet" on:mouseover={startAnimation} on:focus={startAnimation} class="design-science">
-		<article class="design-science">
-			<h2 class="design-science">New Employee Dashboard</h2>
-			<img class="design-science" id="design-science" src="flame-design-science-static.png" alt="Animated hand drawing on a blueprint" />
-			<p class="design-science">Student project at University of Hamburg in cooperation with iteratec.</p>
-		</article>
-	</a>
+	<article>
+		<h2>New Employee Dashboard</h2>
+		<img
+			tabindex="0"
+			id="design-science"
+			src="flame-design-science-static.png"
+			alt="Animation of a hand drawing on a blueprint. Plays on focus or mouseover."
+			on:mouseover={startAnimation}
+			on:focus={startAnimation}
+			on:mouseout={stopAnimation}
+			on:blur={stopAnimation}
+		/>
+		<p>Student project at University of Hamburg in cooperation with iteratec.</p>
+	</article>
 
-	<a href="#not-yet" on:mouseover={startAnimation} on:focus={startAnimation} class="success">
-		<article class="success">
-			<h2 class="success">Piña Colada Machine</h2>
-			<img class="success" id="success" src="flame-success-static.png" alt="Animated brain cheering" />
-			<p class="success">Find recipes for incredible drinks. My First steps in React.</p>
-		</article>
-	</a>
+	<article>
+		<h2>Piña Colada Machine</h2>
+		<img
+			tabindex="0"
+			id="success"
+			src="flame-success-static.png"
+			alt="Animation of a brain cheering. Plays on focus or mouseover."
+			on:focus={startAnimation}
+			on:blur={stopAnimation}
+			on:mouseover={startAnimation}
+			on:mouseout={stopAnimation}
+		/>
+		<p>Find recipes for incredible drinks. My first steps in React.</p>
+	</article>
 
-	<link rel="preload" as="image" href="flame-design-science.gif">
-	<link rel="preload" as="image" href="flame-no-connection.gif">
-	<link rel="preload" as="image" href="flame-success.gif">
+	<img src="flame-design-science.gif" loading="lazy" alt="Invisible image used for preloading" aria-hidden="true" class="hidden"> 
+	<img src="flame-no-connection.gif" loading="lazy" alt="Invisible image used for preloading" aria-hidden="true" class="hidden"> 
+	<img src="flame-success.gif" loading="lazy" alt="Invisible image used for preloading" aria-hidden="true" class="hidden"> 
 </section>
 
 <style>
@@ -88,29 +85,26 @@
 		align-items: center;
 		justify-content: center;
 	}
-	
-	a, article {
+
+	article {
 		display: flex;
 		flex-direction: column;
 		text-align: center;
 		align-items: center;
-	}
-
-	a {
 		padding: 2rem 0.2rem;
 	}
 
-	a:first-of-type {
+	article:first-of-type {
 		grid-column-start: 2;
-	}
-
-	article:hover > h2 {
-		text-decoration: underline;
 	}
 
 	img {
 		width: 100%;
 		max-width: 320px;
+	}
+
+	.hidden {
+		display: none;
 	}
 
 	h2 {
