@@ -53,7 +53,7 @@
 			on:blur={stopAnimation}
 		/>
 		<p>Student project at University of Hamburg in cooperation with iteratec.</p>
-		<a href="#not-yet" target="_blank">Learn more</a>
+		<a href="#not-yet">Learn more</a>
 	</article>
 
 	<article>
@@ -69,7 +69,7 @@
 			on:mouseout={stopAnimation}
 		/>
 		<p>Find recipes for incredible drinks. My first steps in React.</p>
-		<a href="#not-yet" target="_blank">Code</a>
+		<a href="#not-yet">Code</a>
 	</article>
 
 	<img

@@ -28,7 +28,7 @@
 		margin: 1.5rem;
 	}
 
-	@media (max-width: 899px) {
+	@media (max-width: 899px), (max-height: 699px) {
 		nav {
 			display: none;
 		}
