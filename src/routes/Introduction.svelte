@@ -99,4 +99,35 @@
 			display: none;
 		}
 	}
+
+	@media (max-width: 899px) {
+		section {
+			grid-template-columns: 1rem calc(100% - 2rem) 1rem;
+			grid-template-rows: calc(50% - 3.8rem) calc(50% - 3.8rem) 7.6rem;
+		}
+
+		article {
+			grid-column-start: 2;
+			grid-row-start: 1;
+		}
+
+		img {
+			grid-column-start: 2;
+			grid-row-start: 2;
+		}
+
+		span {
+			grid-column-start: 2;
+			grid-row-start: 3;
+		}
+
+		article,
+		img,
+		span,
+		h1,
+		p {
+			justify-self: center;
+			text-align: center;
+		}
+	}
 </style>

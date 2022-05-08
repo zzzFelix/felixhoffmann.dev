@@ -37,6 +37,7 @@
 			on:blur={stopAnimation}
 		/>
 		<p>Sort books by color using various sorting algorithms.</p>
+		<a href="https://book-sort.felixhoffmann.dev" target="_blank">Demo</a>
 	</article>
 
 	<article>
@@ -52,6 +53,7 @@
 			on:blur={stopAnimation}
 		/>
 		<p>Student project at University of Hamburg in cooperation with iteratec.</p>
+		<a href="#not-yet" target="_blank">Learn more</a>
 	</article>
 
 	<article>
@@ -67,11 +69,30 @@
 			on:mouseout={stopAnimation}
 		/>
 		<p>Find recipes for incredible drinks. My first steps in React.</p>
+		<a href="#not-yet" target="_blank">Code</a>
 	</article>
 
-	<img src="flame-design-science.gif" loading="lazy" alt="Invisible image used for preloading" aria-hidden="true" class="hidden"> 
-	<img src="flame-no-connection.gif" loading="lazy" alt="Invisible image used for preloading" aria-hidden="true" class="hidden"> 
-	<img src="flame-success.gif" loading="lazy" alt="Invisible image used for preloading" aria-hidden="true" class="hidden"> 
+	<img
+		src="flame-design-science.gif"
+		loading="lazy"
+		alt="Invisible image used for preloading"
+		aria-hidden="true"
+		class="hidden"
+	/>
+	<img
+		src="flame-no-connection.gif"
+		loading="lazy"
+		alt="Invisible image used for preloading"
+		aria-hidden="true"
+		class="hidden"
+	/>
+	<img
+		src="flame-success.gif"
+		loading="lazy"
+		alt="Invisible image used for preloading"
+		aria-hidden="true"
+		class="hidden"
+	/>
 </section>
 
 <style>
@@ -91,7 +112,6 @@
 		flex-direction: column;
 		text-align: center;
 		align-items: center;
-		padding: 2rem 0.2rem;
 	}
 
 	article:first-of-type {
@@ -104,7 +124,9 @@
 	}
 
 	.hidden {
-		display: none;
+		width: 0;
+		height: 0;
+		opacity: 0;
 	}
 
 	h2 {
@@ -116,6 +138,7 @@
 	}
 	p {
 		font-size: 1rem;
+		margin-bottom: 1rem;
 	}
 
 	h2,
@@ -123,5 +146,47 @@
 		font-style: normal;
 		line-height: 105%;
 		letter-spacing: 0.1rem;
+	}
+
+	a {
+		font-size: 1rem;
+		display: block;
+		font-weight: 600;
+		text-transform: uppercase;
+		margin-top: 0.5rem;
+	}
+
+	@media (max-width: 899px) {
+		section {
+			grid-template-columns: 1rem calc(100% - 2rem) 1rem;
+			gap: 0;
+			grid-template-rows: 1fr 1fr 1fr;
+			height: 300vh;
+			min-height: 2100px;
+			scroll-snap-align: none;
+			padding-top: 0;
+		}
+
+		article {
+			height: 100vh;
+			scroll-snap-align: center;
+			padding-top: 7.6rem;
+			box-sizing: border-box;
+		}
+
+		article:first-of-type {
+			grid-column-start: 2;
+			grid-row-start: 1;
+		}
+
+		article:nth-of-type(2) {
+			grid-column-start: 2;
+			grid-row-start: 2;
+		}
+
+		article:last-of-type {
+			grid-column-start: 2;
+			grid-row-start: 3;
+		}
 	}
 </style>

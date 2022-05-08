@@ -3,7 +3,9 @@
 	<article>
 		<h2>Hi!</h2>
 		<p>I am passionate about web development, accessibility, and algorithms and data structures.</p>
-		<p>Developing digital champions at <a href="https://iteratec.com" target="_blank">iteratec</a>.</p>
+		<p>
+			Developing digital champions at <a href="https://iteratec.com" target="_blank">iteratec</a>.
+		</p>
 		<p>Send me a message: <a href="mailto:hello@felixhoffmann.dev">hello@felixhoffmann.dev</a></p>
 	</article>
 </section>
@@ -17,6 +19,7 @@
 		grid-template-rows: calc(100% - 7.6rem) 7.6rem;
 		overflow: hidden;
 	}
+
 	img {
 		max-width: 100%;
 		max-height: 100vh;
@@ -46,5 +49,29 @@
 		font-style: normal;
 		font-size: 2rem;
 		line-height: 140%;
+	}
+
+	@media (max-width: 899px) {
+		section {
+			grid-template-columns: 1rem calc(100% - 2rem) 1rem;
+			grid-template-rows: 50% 50%;
+		}
+
+		img {
+			grid-row-start: 2;
+			grid-column-start: 1;
+			grid-column-end: 3;
+			max-height: 100%;
+		}
+
+		article {
+			grid-row-start: 1;
+			grid-column-start: 2;
+		}
+
+		h2,
+		p {
+			font-size: 1.2rem;
+		}
 	}
 </style>

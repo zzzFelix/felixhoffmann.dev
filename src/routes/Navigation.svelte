@@ -27,4 +27,10 @@
 		color: #1B1B1C;
 		margin: 1.5rem;
 	}
+
+	@media (max-width: 899px) {
+		nav {
+			display: none;
+		}
+	}
 </style>

@@ -19,6 +19,7 @@
 		margin: 0;
 		padding: 0;
 	}
+	
 	:global(html) {
 		scroll-snap-type: y mandatory;
 	}

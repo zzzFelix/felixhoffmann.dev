@@ -1,7 +1,9 @@
 <section id="articles">
 	<ul>
 		<li>
-			<a href="https://medium.com/p/d0f1999ec71f" target="_blank">5 Videos Junior Web Developers Should Watch</a>
+			<a href="https://medium.com/p/d0f1999ec71f" target="_blank"
+				>5 Videos Junior Web Developers Should Watch</a
+			>
 			<p>May 5, 2022 on medium.com</p>
 		</li>
 		<li>
@@ -9,7 +11,9 @@
 			<p>May 8, 2022 on medium.com</p>
 		</li>
 		<li>
-			<a href="https://medium.com/p/d0f1999ec71f" target="_blank">How We Make Sure New Employees Find What They Are Looking For</a>
+			<a href="https://medium.com/p/d0f1999ec71f" target="_blank"
+				>How We Make Sure New Employees Find What They Are Looking For</a
+			>
 			<p>May 12, 2022 on medium.com</p>
 		</li>
 		<a href="#top" class="top-anchor">
@@ -74,5 +78,15 @@
 	img {
 		width: 10rem;
 		transform: scaleX(-1);
+	}
+
+	@media (max-width: 899px) {
+		li {
+			font-size: 1.2rem;
+		}
+
+		img {
+			width: 5rem;
+		}
 	}
 </style>
