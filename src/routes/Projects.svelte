@@ -59,7 +59,7 @@
 	<a href="#not-yet" on:mouseover={startAnimation} on:focus={startAnimation} class="design-science">
 		<article class="design-science">
 			<h2 class="design-science">New Employee Dashboard</h2>
-			<img class="design-science" id="design-science" src="flame-design-science-static.png" alt="Animated cartoon character" />
+			<img class="design-science" id="design-science" src="flame-design-science-static.png" alt="Animated hand drawing on a blueprint" />
 			<p class="design-science">Student project at University of Hamburg in cooperation with iteratec.</p>
 		</article>
 	</a>
