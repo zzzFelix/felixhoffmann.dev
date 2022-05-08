@@ -15,6 +15,10 @@
 </main>
 
 <style>
+	:global(*) {
+		margin: 0;
+		padding: 0;
+	}
 	:global(html) {
 		scroll-snap-type: y mandatory;
 	}
@@ -28,7 +32,6 @@
 	:global(body) {
 		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
 			'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-		margin: 0;
 		color: #1b1b1c;
 	}
 

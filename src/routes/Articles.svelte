@@ -24,12 +24,15 @@
 		background-color: #87d8e0;
 		scroll-snap-align: start;
 		display: grid;
+		grid-template-columns: 12.5% 75% 12.5%;
+		grid-template-rows: calc(100% - 7.6rem) 7.6rem;
 		position: relative;
 	}
 
 	ul {
 		list-style-type: none;
 		padding-bottom: 7.6rem;
+		grid-column-start: 2;
 	}
 
 	li {

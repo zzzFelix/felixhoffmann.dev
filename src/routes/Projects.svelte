@@ -81,16 +81,27 @@
 	section {
 		background-color: #70efb2;
 		scroll-snap-align: start;
-		display: flex;
-		flex-direction: row;
+		display: grid;
+		grid-template-columns: 10% 20% 20% 20% 10%;
+		gap: 5%;
+		grid-template-rows: calc(100% - 7.6rem) 7.6rem;
+		align-items: center;
 		justify-content: center;
-		align-items: flex-start;
-		gap: 4rem;
+	}
+	
+	a, article {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
 	}
 
-	article {
-		max-width: 17rem;
-		position: relative;
+	a {
+		padding: 2rem 0.2rem;
+	}
+
+	a:first-of-type {
+		grid-column-start: 2;
 	}
 
 	article:hover > h2 {
@@ -98,12 +109,13 @@
 	}
 
 	img {
-		max-width: 100%;
+		width: 100%;
+		max-width: 320px;
 	}
 
 	h2 {
-		word-spacing: 17rem; /* parent-width, make sure line breaks after every word */
-		font-size: 2rem;
+		word-spacing: 9999rem; /* ridiculous width to make sure line breaks after every word */
+		font-size: 1.5rem;
 		display: block;
 		font-weight: 600;
 		text-transform: uppercase;
@@ -116,7 +128,6 @@
 	p {
 		font-style: normal;
 		line-height: 105%;
-		text-align: center;
 		letter-spacing: 0.1rem;
 	}
 </style>
