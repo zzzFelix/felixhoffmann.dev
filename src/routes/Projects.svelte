@@ -53,7 +53,7 @@
 			on:blur={stopAnimation}
 		/>
 		<p>Student project at University of Hamburg in cooperation with iteratec.</p>
-		<a href="#not-yet">Learn more</a>
+		<a href="https://www.youtube.com/watch?v=6Zod9ig7AOw" target="_blank">Watch video</a>
 	</article>
 
 	<article>
