@@ -1,3 +1,5 @@
+<a href="#about" class="hidden-a11y-link">Skip to content</a>
+
 <nav>
 	<a href="#about">About me</a>
 	<a href="#projects">Projects</a>
@@ -5,6 +7,20 @@
 </nav>
 
 <style>
+	.hidden-a11y-link {
+		position: absolute;
+		top: -5rem;
+		transition: transform 1s;
+		padding: 1rem 1rem 0.5rem;
+		background: #04294f;
+		color: #ffffff;
+		border-radius: 0 0 1rem 1rem;
+	}
+
+	.hidden-a11y-link:focus {
+		transform: translateY(3.3rem);
+	}
+
 	nav {
 		position: fixed;
 		text-align: right;
