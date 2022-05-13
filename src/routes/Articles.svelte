@@ -1,20 +1,14 @@
 <section id="articles">
 	<ul>
 		<li>
+			<a href="https://medium.com/@zzzFelix/create-an-accessible-hamburger-menu-869b0301cfd7" target="_blank">Create an Accessible Hamburger Menu</a>
+			<p>May 14, 2022 on medium.com</p>
+		</li>
+		<li>
 			<a href="https://medium.com/p/d0f1999ec71f" target="_blank"
 				>5 Videos Junior Web Developers Should Watch</a
 			>
 			<p>May 5, 2022 on medium.com</p>
-		</li>
-		<li>
-			<a href="https://medium.com/p/d0f1999ec71f" target="_blank">Stop Making Me Download Fonts</a>
-			<p>May 8, 2022 on medium.com</p>
-		</li>
-		<li>
-			<a href="https://medium.com/p/d0f1999ec71f" target="_blank"
-				>How We Make Sure New Employees Find What They Are Looking For</a
-			>
-			<p>May 12, 2022 on medium.com</p>
 		</li>
 		<a href="#top" class="top-anchor">
 			<p>Take me to the top</p>
