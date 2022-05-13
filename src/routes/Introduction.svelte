@@ -112,12 +112,20 @@
 	@media (max-width: 899px) {
 		section {
 			grid-template-columns: 1rem calc(100% - 2rem) 1rem;
-			grid-template-rows: calc(50% - 3.8rem) calc(50% - 3.8rem) 7.6rem;
+			grid-template-rows: 20% 40% 40%;
 		}
 
 		article {
 			grid-column-start: 2;
 			grid-row-start: 1;
+		}
+
+		h1 {
+			font-size: 1.5rem;
+		}
+
+		p {
+			font-size: 1rem;
 		}
 
 		img {
