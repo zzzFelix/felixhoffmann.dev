@@ -20,7 +20,7 @@
 
 <BurgerMenuIcon open={menuOpen} on:menu={toggleMenu} />
 
-<nav class={menuOpen ? 'open' : 'closed'}>
+<nav class={menuOpen ? 'open' : 'closed'} aria-expanded={menuOpen}>
 	<a href="#about" on:click={closeMenu}>About me</a>
 	<a href="#projects" on:click={closeMenu}>Projects</a>
 	<a href="#articles" on:click={closeMenu}>Articles</a>
