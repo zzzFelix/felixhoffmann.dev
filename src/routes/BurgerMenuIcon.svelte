@@ -12,12 +12,8 @@
 	};
 </script>
 
-<button
-	class={open ? 'menu-button open' : 'menu-button'}
-	on:click={toggleMenu}
-	aria-label={open ? 'Close the menu' : 'Open the menu'}
->
-	<p>Menu</p>
+<button class={open ? 'menu-button open' : 'menu-button'} on:click={toggleMenu}>
+	<p>{open ? 'Close' : 'Open'} Menu</p>
 	<div aria-hidden="true">
 		<div class="bar1" />
 		<div class="bar2" />
