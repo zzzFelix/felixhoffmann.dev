@@ -15,7 +15,7 @@
 <button
 	class={open ? 'menu-button open' : 'menu-button'}
 	on:click={toggleMenu}
-	aria-label="Open the menu"
+	aria-label={open ? 'Close the menu' : 'Open the menu'}
 >
 	<p>Menu</p>
 	<div aria-hidden="true">
