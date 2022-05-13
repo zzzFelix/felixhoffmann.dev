@@ -30,7 +30,7 @@
 			tabindex="0"
 			id="no-connection"
 			src="flame-no-connection-static.png"
-			alt="Animation of a cartoon character. Plays on focus or mouseover."
+			alt="Decorative animation of a cartoon character. Plays on focus or mouse over."
 			on:mouseover={startAnimation}
 			on:focus={startAnimation}
 			on:mouseout={stopAnimation}
@@ -46,7 +46,7 @@
 			tabindex="0"
 			id="design-science"
 			src="flame-design-science-static.png"
-			alt="Animation of a hand drawing on a blueprint. Plays on focus or mouseover."
+			alt="Decorative animation of a hand drawing on a blueprint. Plays on focus or mouse over."
 			on:mouseover={startAnimation}
 			on:focus={startAnimation}
 			on:mouseout={stopAnimation}
@@ -62,7 +62,7 @@
 			tabindex="0"
 			id="success"
 			src="flame-success-static.png"
-			alt="Animation of a brain cheering. Plays on focus or mouseover."
+			alt="Decorative animation of a brain cheering. Plays on focus or mouse over."
 			on:focus={startAnimation}
 			on:blur={stopAnimation}
 			on:mouseover={startAnimation}
