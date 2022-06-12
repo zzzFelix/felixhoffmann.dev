@@ -2,7 +2,7 @@
 	<ul>
 		<li>
 			<a href="https://medium.com/@zzzFelix/create-an-accessible-hamburger-menu-869b0301cfd7" target="_blank">Create an Accessible Hamburger Menu</a>
-			<p>May 14, 2022 on medium.com</p>
+			<p>May 14, 2022 in UX Collective</p>
 		</li>
 		<li>
 			<a href="https://medium.com/p/d0f1999ec71f" target="_blank"
