@@ -1,6 +1,10 @@
 <section id="articles">
 	<ul>
 		<li>
+			<a href="https://medium.com/p/7ce2a3f842cc" target="_blank">Use Gym Tactics to Become a Better Developer</a>
+			<p>June 15, 2022 in Better Programming</p>
+		</li>
+		<li>
 			<a href="https://medium.com/@zzzFelix/create-an-accessible-hamburger-menu-869b0301cfd7" target="_blank">Create an Accessible Hamburger Menu</a>
 			<p>May 14, 2022 in UX Collective</p>
 		</li>
