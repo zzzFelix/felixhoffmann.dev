@@ -9,7 +9,7 @@
 			<p>June 15, 2022 in Better Programming</p>
 		</li>
 		<li>
-			<a href="https://medium.com/@zzzFelix/create-an-accessible-hamburger-menu-869b0301cfd7" target="_blank">Create an Accessible Hamburger Menu</a>
+			<a href="https://medium.com/@zzzFelix/create-an-accessible-hamburger-menu-869b0301cfd7" target="_blank">Create an accessible hamburger menu</a>
 			<p>May 14, 2022 in UX Collective</p>
 		</li>
 		<a href="#top" class="top-anchor">
