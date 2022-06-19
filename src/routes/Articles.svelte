@@ -1,18 +1,16 @@
 <section id="articles">
 	<ul>
 		<li>
+			<a href="https://medium.com/user-experience-design-1/an-ode-to-system-fonts-84e90be1d68c" target="_blank">An ode to system fonts</a>
+			<p>June 19, 2022 in UX Collective</p>
+		</li>
+		<li>
 			<a href="https://medium.com/p/7ce2a3f842cc" target="_blank">Use Gym Tactics to Become a Better Developer</a>
 			<p>June 15, 2022 in Better Programming</p>
 		</li>
 		<li>
 			<a href="https://medium.com/@zzzFelix/create-an-accessible-hamburger-menu-869b0301cfd7" target="_blank">Create an Accessible Hamburger Menu</a>
 			<p>May 14, 2022 in UX Collective</p>
-		</li>
-		<li>
-			<a href="https://medium.com/p/d0f1999ec71f" target="_blank"
-				>5 Videos Junior Web Developers Should Watch</a
-			>
-			<p>May 5, 2022 on medium.com</p>
 		</li>
 		<a href="#top" class="top-anchor">
 			<p>Take me to the top</p>
