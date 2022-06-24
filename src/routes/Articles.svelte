@@ -1,15 +1,19 @@
 <section id="articles">
 	<ul>
 		<li>
-			<a href="https://medium.com/user-experience-design-1/an-ode-to-system-fonts-84e90be1d68c" target="_blank">An ode to system fonts</a>
+			<a href="https://bootcamp.uxdesign.cc/should-designers-code-ada045c9071e?sk=f10bd31ee4b0fe6eca5d4c933b42d7d5" target="_blank">Should designers code?</a>
+			<p>June 24, 2022 in Bootcamp</p>
+		</li>
+		<li>
+			<a href="https://uxdesign.cc/an-ode-to-system-fonts-84e90be1d68c?sk=7210270419cfc8490ab185ce0d8672c7" target="_blank">An ode to system fonts</a>
 			<p>June 19, 2022 in UX Collective</p>
 		</li>
 		<li>
-			<a href="https://medium.com/p/7ce2a3f842cc" target="_blank">Use Gym Tactics to Become a Better Developer</a>
+			<a href="https://betterprogramming.pub/use-gym-tactics-to-become-a-better-developer-7ce2a3f842cc?sk=1ceab68066422016ddde7676272d6ae4" target="_blank">Use Gym Tactics to Become a Better Developer</a>
 			<p>June 15, 2022 in Better Programming</p>
 		</li>
 		<li>
-			<a href="https://medium.com/@zzzFelix/create-an-accessible-hamburger-menu-869b0301cfd7" target="_blank">Create an accessible hamburger menu</a>
+			<a href="https://uxdesign.cc/create-an-accessible-hamburger-menu-869b0301cfd7?sk=eb36f22544517bad69794a1b75bf590a" target="_blank">Create an accessible hamburger menu</a>
 			<p>May 14, 2022 in UX Collective</p>
 		</li>
 		<a href="#top" class="top-anchor">
