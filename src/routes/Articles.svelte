@@ -1,6 +1,10 @@
 <section id="articles">
 	<ul>
 		<li>
+			<a href="https://betterprogramming.pub/when-load-testing-gives-a-false-sense-of-security-76527a644e29?sk=66682ada6929792015049d4ee6c90a82" target="_blank">When Load Testing Gives a False Sense of Security</a>
+			<p>July 8, 2022 in Better Programming</p>
+		</li>
+		<li>
 			<a href="https://bootcamp.uxdesign.cc/should-designers-code-ada045c9071e?sk=f10bd31ee4b0fe6eca5d4c933b42d7d5" target="_blank">Should designers code?</a>
 			<p>June 24, 2022 in Bootcamp</p>
 		</li>
