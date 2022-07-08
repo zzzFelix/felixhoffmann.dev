@@ -42,7 +42,7 @@
 	}
 
 	nav {
-		position: fixed;
+		position: absolute;
 		text-align: right;
 		padding: 3rem;
 		width: calc(100% - 3rem - 3rem);

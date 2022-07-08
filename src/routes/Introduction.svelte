@@ -5,8 +5,7 @@
 	</article>
 	<img src="astronaut.svg" alt="Decorative animation of an astronaut" id="astronaut" />
 	<img src="astronaut-background.svg" alt="Background for astronaut" />
-	<span class="keyboard">Press arrow down key</span>
-	<span class="touch">Scroll down</span>
+	<span>Scroll down</span>
 </section>
 
 <style>
@@ -93,20 +92,6 @@
 		text-transform: uppercase;
 		animation: reveal 2s ease-in 0s 1;
 		animation-fill-mode: backwards;
-	}
-
-	.touch {
-		display: none;
-	}
-
-	@media (max-height: 699px), (hover: none) {
-		.keyboard {
-			display: none;
-		}
-
-		.touch {
-			display: inline;
-		}
 	}
 
 	@media (max-width: 899px) {

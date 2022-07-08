@@ -22,10 +22,6 @@
 			'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 		color: #1b1b1c;
 	}
-	
-	:global(html) {
-		scroll-snap-type: y mandatory;
-	}
 
 	:global(a) {
 		text-decoration: none;
