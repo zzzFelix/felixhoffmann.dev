@@ -2,6 +2,10 @@
 node_modules
 /build
 /.svelte-kit
+/.netlify
+/.vscode
+/.idea
+/.gradle
 /package
 .env
 .env.*
