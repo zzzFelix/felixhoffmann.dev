@@ -58,7 +58,6 @@
 	section {
 		display: grid;
 		grid-template-rows: 1fr auto 1fr;
-		padding-left: 3rem;
 	}
 
 	ul {
