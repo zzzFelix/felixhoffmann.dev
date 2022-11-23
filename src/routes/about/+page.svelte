@@ -1,32 +1,29 @@
 <script>
-	import Skeleton from '../Skeleton.svelte';
 	import { background } from '../../store/background';
+	import { showTitle } from '../../store/title';
 
-	background.update(() => "#f3e87e");
+	background.update(() => '#f3e87e');
+	showTitle.update(() => true);
 </script>
 
 <svelte:head><title>About me — Felix Hoffmann</title></svelte:head>
-<svelte:body class="background"></svelte:body>
+<svelte:body class="background" />
 
-<Skeleton>
-	<section>
-		<img src="felix-hoffmann.webp" alt="Headshot of Felix Hoffmann" />
-		<article>
-			<h2>Hi!</h2>
-			<p>
-				I am passionate about web development, accessibility, and algorithms and data structures.
-			</p>
-			<p>
-				Developing digital champions at <a
-					href="https://iteratec.com"
-					target="_blank"
-					rel="noreferrer">iteratec</a
-				>.
-			</p>
-			<p>Send me a message: <a href="mailto:hello@felixhoffmann.dev">hello@felixhoffmann.dev</a></p>
-		</article>
-	</section>
-</Skeleton>
+<section>
+	<img src="felix-hoffmann.webp" alt="Headshot of Felix Hoffmann" />
+	<article>
+		<h2>Hi!</h2>
+		<p>I am passionate about web development, accessibility, and algorithms and data structures.</p>
+		<p>
+			Developing digital champions at <a
+				href="https://iteratec.com"
+				target="_blank"
+				rel="noreferrer">iteratec</a
+			>.
+		</p>
+		<p>Send me a message: <a href="mailto:hello@felixhoffmann.dev">hello@felixhoffmann.dev</a></p>
+	</article>
+</section>
 
 <style>
 	section {

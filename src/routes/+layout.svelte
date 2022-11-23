@@ -2,23 +2,27 @@
 	import Header from '../components/Header.svelte';
 	import Navigation from '../components/Navigation.svelte';
 	import { background } from '../store/background';
+	import { showTitle } from '../store/title';
 
 	let backgroundColor: String;
-	background.subscribe(value => {
+	background.subscribe((value) => {
 		backgroundColor = value;
 	});
 
-	export let showTitle = true;
+	let showTitleInHeader: boolean;
+	showTitle.subscribe((value) => {
+		showTitleInHeader = value;
+	});
 </script>
 
 <div class="main-container" style="--background-color: {backgroundColor}">
 	<a href="#main" class="hidden-a11y-link">Skip to content</a>
-	
+
 	<div class="header-nav-container">
-		<Header showTitle={showTitle} />
-		<Navigation/>
+		<Header showTitle={showTitleInHeader} />
+		<Navigation />
 	</div>
-	
+
 	<main id="main"><slot /></main>
 </div>
 

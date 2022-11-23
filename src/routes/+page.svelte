@@ -1,20 +1,19 @@
 <script>
-	import Skeleton from './Skeleton.svelte';
 	import { background } from '../store/background';
+	import { showTitle } from '../store/title';
 
-	background.update(() => "#e2c0d1");
+	background.update(() => '#e2c0d1');
+	showTitle.update(() => false);
 </script>
 
-<Skeleton showTitle={false}>
-	<section>
-		<article>
-			<h1>Felix Hoffmann</h1>
-			<p>Software Engineer</p>
-		</article>
-		<img src="astronaut.svg" alt="Decorative animation of an astronaut" id="astronaut" />
-		<img src="astronaut-background.svg" alt="Background for astronaut" />
-	</section>
-</Skeleton>
+<section>
+	<article>
+		<h1>Felix Hoffmann</h1>
+		<p>Software Engineer</p>
+	</article>
+	<img src="astronaut.svg" alt="Decorative animation of an astronaut" id="astronaut" />
+	<img src="astronaut-background.svg" alt="Background for astronaut" />
+</section>
 
 <style>
 	section {

@@ -1,6 +1,9 @@
 <script lang="ts">
-	import Skeleton from '../Skeleton.svelte';
 	import { background } from '../../store/background';
+	import { showTitle } from '../../store/title';
+
+	showTitle.update(() => true);
+	background.update(() => '#70efb2');
 
 	const IMG_SUFFIX_ANIMATION = '.gif';
 	const IMG_SUFFIX_STATIC = '-static.png';
@@ -24,87 +27,88 @@
 	const getId = (event: any): string | undefined => {
 		return event.target?.id;
 	};
-
-	background.update(() => "#70efb2");
 </script>
 
 <svelte:head><title>Projects — Felix Hoffmann</title></svelte:head>
 
-<Skeleton>
-	<section>
-		<article>
-			<h2>Sorting Algorithm Visualizer</h2>
-			<img
-				tabindex="0"
-				id="no-connection"
-				src="flame-no-connection-static.png"
-				alt="Decorative animation of a cartoon character. Plays on focus or mouse over."
-				on:mouseover={startAnimation}
-				on:focus={startAnimation}
-				on:mouseout={stopAnimation}
-				on:blur={stopAnimation}
-			/>
-			<p>Sort books by color using various sorting algorithms.</p>
-			<a href="https://serene-swartz-5a3049.netlify.app/#/book-sort" target="_blank" rel="noreferrer">Demo</a>
-		</article>
-
-		<article>
-			<h2>New Employee Dashboard</h2>
-			<img
-				tabindex="0"
-				id="design-science"
-				src="flame-design-science-static.png"
-				alt="Decorative animation of a hand drawing on a blueprint. Plays on focus or mouse over."
-				on:mouseover={startAnimation}
-				on:focus={startAnimation}
-				on:mouseout={stopAnimation}
-				on:blur={stopAnimation}
-			/>
-			<p>Student project at University of Hamburg in cooperation with iteratec.</p>
-			<a href="https://www.youtube.com/watch?v=6Zod9ig7AOw" target="_blank" rel="noreferrer"
-				>Watch video</a
-			>
-		</article>
-
-		<article>
-			<h2>I don't know.. You decide</h2>
-			<img
-				tabindex="0"
-				id="success"
-				src="flame-success-static.png"
-				alt="Decorative animation of a brain cheering. Plays on focus or mouse over."
-				on:focus={startAnimation}
-				on:blur={stopAnimation}
-				on:mouseover={startAnimation}
-				on:mouseout={stopAnimation}
-			/>
-			<p>My team and I couldn't decide where to eat lunch. We built a wheel of fortune to make the decision for us.</p>
-			<a href="#not-yet">Watch video</a>
-		</article>
-
+<section>
+	<article>
+		<h2>Sorting Algorithm Visualizer</h2>
 		<img
-			src="flame-design-science.gif"
-			loading="lazy"
-			alt="Invisible image used for preloading"
-			aria-hidden="true"
-			class="hidden"
+			tabindex="0"
+			id="no-connection"
+			src="flame-no-connection-static.png"
+			alt="Decorative animation of a cartoon character. Plays on focus or mouse over."
+			on:mouseover={startAnimation}
+			on:focus={startAnimation}
+			on:mouseout={stopAnimation}
+			on:blur={stopAnimation}
 		/>
+		<p>Sort books by color using various sorting algorithms.</p>
+		<a href="https://serene-swartz-5a3049.netlify.app/#/book-sort" target="_blank" rel="noreferrer"
+			>Demo</a
+		>
+	</article>
+
+	<article>
+		<h2>New Employee Dashboard</h2>
 		<img
-			src="flame-no-connection.gif"
-			loading="lazy"
-			alt="Invisible image used for preloading"
-			aria-hidden="true"
-			class="hidden"
+			tabindex="0"
+			id="design-science"
+			src="flame-design-science-static.png"
+			alt="Decorative animation of a hand drawing on a blueprint. Plays on focus or mouse over."
+			on:mouseover={startAnimation}
+			on:focus={startAnimation}
+			on:mouseout={stopAnimation}
+			on:blur={stopAnimation}
 		/>
+		<p>Student project at University of Hamburg in cooperation with iteratec.</p>
+		<a href="https://www.youtube.com/watch?v=6Zod9ig7AOw" target="_blank" rel="noreferrer"
+			>Watch video</a
+		>
+	</article>
+
+	<article>
+		<h2>I don't know.. You decide</h2>
 		<img
-			src="flame-success.gif"
-			loading="lazy"
-			alt="Invisible image used for preloading"
-			aria-hidden="true"
-			class="hidden"
+			tabindex="0"
+			id="success"
+			src="flame-success-static.png"
+			alt="Decorative animation of a brain cheering. Plays on focus or mouse over."
+			on:focus={startAnimation}
+			on:blur={stopAnimation}
+			on:mouseover={startAnimation}
+			on:mouseout={stopAnimation}
 		/>
-	</section>
-</Skeleton>
+		<p>
+			My team and I couldn't decide where to eat lunch. We built a wheel of fortune to make the
+			decision for us.
+		</p>
+		<a href="#not-yet">Watch video</a>
+	</article>
+
+	<img
+		src="flame-design-science.gif"
+		loading="lazy"
+		alt="Invisible image used for preloading"
+		aria-hidden="true"
+		class="hidden"
+	/>
+	<img
+		src="flame-no-connection.gif"
+		loading="lazy"
+		alt="Invisible image used for preloading"
+		aria-hidden="true"
+		class="hidden"
+	/>
+	<img
+		src="flame-success.gif"
+		loading="lazy"
+		alt="Invisible image used for preloading"
+		aria-hidden="true"
+		class="hidden"
+	/>
+</section>
 
 <style>
 	section {
