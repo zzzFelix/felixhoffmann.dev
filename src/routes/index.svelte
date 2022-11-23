@@ -1,49 +1,119 @@
 <script>
-	import AboutMe from './AboutMe.svelte';
-	import Articles from './Articles.svelte';
-	import Introduction from './Introduction.svelte';
-	import Navigation from './Navigation.svelte';
-	import Projects from './Projects.svelte';
+	import Skeleton from './Skeleton.svelte';
+	import { background } from '../store/background';
+
+	background.update(() => "#e2c0d1");
 </script>
 
-<Navigation />
-<main>
-	<Introduction />
-	<AboutMe />
-	<Projects />
-	<Articles />
-</main>
+<Skeleton showTitle={false}>
+	<section>
+		<article>
+			<h1>Felix Hoffmann</h1>
+			<p>Software Engineer</p>
+		</article>
+		<img src="astronaut.svg" alt="Decorative animation of an astronaut" id="astronaut" />
+		<img src="astronaut-background.svg" alt="Background for astronaut" />
+	</section>
+</Skeleton>
 
 <style>
-	:global(*) {
+	section {
+		scroll-snap-align: start;
+		display: grid;
+		grid-template-columns: auto 25rem 25rem auto;
+		grid-template-rows: 7.6rem 1fr 5fr 7.6rem;
+	}
+
+	article {
+		grid-column-start: 2;
+		grid-row-start: 3;
+		justify-self: start;
+	}
+
+	@keyframes astronaut {
+		from {
+			transform: translateX(-0.1rem) translateY(-0.5rem);
+		}
+		to {
+			transform: rotate(10deg) translateX(0.1rem) translateY(0.5rem);
+		}
+	}
+	#astronaut {
+		z-index: 1;
+		animation: astronaut 5s linear 0s infinite alternate;
+		animation-timing-function: linear;
+		animation-fill-mode: both;
+	}
+
+	img {
+		grid-row-start: 3;
+		grid-column-start: 3;
+		justify-self: end;
+		width: 80%;
+		max-width: 20rem;
+		margin-top: -9%;
+		align-self: start;
+	}
+
+	h1,
+	p {
 		margin: 0;
-		padding: 0;
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-			'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-		color: #1b1b1c;
+		color: #04294f;
+		text-transform: uppercase;
+		font-size: 2rem;
+		line-height: 150%;
+		letter-spacing: 0.1em;
 	}
 
-	:global(a) {
-		text-decoration: none;
+	@keyframes reveal {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
 	}
 
-	:global(main > *) {
-		padding-top: 7.6rem;
-		box-sizing: border-box;
-		height: 100vh;
-		min-height: 700px;
+	h1 {
+		align-self: end;
+		font-style: normal;
+		font-weight: 600;
 	}
 
-	@media (max-height: 699px) {
-		:global(html) {
-			scroll-snap-type: none;
+	p {
+		font-weight: 300;
+	}
+
+	@media (max-width: 899px) {
+		section {
+			grid-template-columns: 1rem calc(100% - 2rem) 1rem;
+			grid-template-rows: 20% 40% 40%;
 		}
 
-		:global(main > *) {
-		padding-top: 6rem;
-		box-sizing: border-box;
-		height: 100vh;
-		min-height: 667px;
-	}
+		article {
+			grid-column-start: 2;
+			grid-row-start: 1;
+		}
+
+		h1 {
+			font-size: 1.5rem;
+		}
+
+		p {
+			font-size: 1rem;
+		}
+
+		img {
+			grid-column-start: 2;
+			grid-row-start: 2;
+		}
+
+		article,
+		img,
+		h1,
+		p {
+			justify-self: center;
+			text-align: center;
+		}
 	}
 </style>

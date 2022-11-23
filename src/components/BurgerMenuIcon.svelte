@@ -23,9 +23,6 @@
 
 <style>
 	.menu-button {
-		position: absolute;
-		top: 1rem;
-		right: 1rem;
 		cursor: pointer;
 		border: none;
 		background: none;
@@ -33,11 +30,6 @@
 		grid-template-columns: auto 35px;
 		align-items: center;
 		grid-gap: 0.5rem;
-		z-index: 10;
-	}
-
-	.menu-button.open {
-		position: fixed;
 	}
 
 	p {
