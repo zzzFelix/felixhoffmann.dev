@@ -37,7 +37,7 @@
 			on:blur={stopAnimation}
 		/>
 		<p>Sort books by color using various sorting algorithms.</p>
-		<a href="https://book-sort.felixhoffmann.dev" target="_blank">Demo</a>
+		<a href="https://book-sort.felixhoffmann.dev" target="_blank" rel="noreferrer">Demo</a>
 	</article>
 
 	<article>
@@ -53,7 +53,7 @@
 			on:blur={stopAnimation}
 		/>
 		<p>Student project at University of Hamburg in cooperation with iteratec.</p>
-		<a href="https://www.youtube.com/watch?v=6Zod9ig7AOw" target="_blank">Watch video</a>
+		<a href="https://www.youtube.com/watch?v=6Zod9ig7AOw" target="_blank" rel="noreferrer">Watch video</a>
 	</article>
 
 	<article>

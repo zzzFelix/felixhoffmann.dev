@@ -4,7 +4,7 @@
 		<h2>Hi!</h2>
 		<p>I am passionate about web development, accessibility, and algorithms and data structures.</p>
 		<p>
-			Developing digital champions at <a href="https://iteratec.com" target="_blank">iteratec</a>.
+			Developing digital champions at <a href="https://iteratec.com" target="_blank" rel="noreferrer">iteratec</a>.
 		</p>
 		<p>Send me a message: <a href="mailto:hello@felixhoffmann.dev">hello@felixhoffmann.dev</a></p>
 	</article>
