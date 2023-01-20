@@ -1,9 +1,9 @@
 #about {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 30rem auto;
     grid-template-rows: 1fr auto;
     grid-template-areas:
-        "h3 ."
+        ". h3"
         "img p"
         "img p";
     background-color: #f3e87e;
@@ -13,11 +13,12 @@
 #about .p-wrapper {
     font-size: 2rem;
     grid-area: p;
-    margin-left: 2rem;
+    max-width: 750px;
 }
 
 #about img {
-    max-width: 100%;
+    align-self: end;
+    width: 28rem;
     grid-area: img;
     margin-left: -2rem;
     margin-bottom: -2rem;
@@ -25,4 +26,54 @@
 
 #about h3 {
     grid-area: h3;
+}
+
+@media (max-width: 999px) {
+    #about {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto 30rem;
+        grid-template-areas:
+            "h3"
+            "p"
+            "img";
+        background-color: #f3e87e;
+        padding: 2rem;
+    }
+
+    #about img {
+        align-self: end;
+        width: 20rem;
+        grid-area: img;
+    }
+}
+
+@media (max-width: 430px) {
+    #about .p-wrapper {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 340px) {
+    #about {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto 22rem;
+        grid-template-areas:
+            "h3"
+            "p"
+            "img";
+        background-color: #f3e87e;
+        padding: 2rem;
+    }
+
+    #about .p-wrapper {
+        font-size: 1rem;
+    }
+
+    #about img {
+        align-self: end;
+        width: 15rem;
+        grid-area: img;
+    }
 }
