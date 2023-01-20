@@ -1,0 +1,59 @@
+header {
+    background-color: var(--background-pink);
+    padding: 2rem;
+}
+
+.hidden-a11y-link {
+    position: absolute;
+    top: -5rem;
+    transition: transform 0.5s;
+    padding: 1rem 1rem 0.5rem;
+    background: #04294f;
+    color: #ffffff;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.hidden-a11y-link:focus {
+    transform: translateY(4.5rem);
+}
+
+h1,
+h2 {
+    margin: 0;
+    color: var(--highlight-color);
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 150%;
+    letter-spacing: 0.1em;
+}
+
+h1 {
+    align-self: end;
+    font-style: normal;
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 160%;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
