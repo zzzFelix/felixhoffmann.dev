@@ -11,6 +11,14 @@
 
 body {
   margin: 0;
+  display: grid;
+  background-color: #ffffff;
+}
+
+.content-wrapper {
+  margin: 3rem 0;
+  max-width: 1180px;
+  justify-self: center;
 }
 
 section {
@@ -32,4 +40,9 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+footer {
+  display: grid;
+  justify-items: center;
 }

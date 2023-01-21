@@ -1,4 +1,13 @@
 #talks {
-    background-color: var(--background-green);
-    padding: 2rem;
+    background-color: var(--background-yellow);
+    padding: 4rem 2rem;
+}
+
+#talks article {
+    padding: 0.5rem 0;
+}
+
+#talks article h4,
+#talks article p {
+    margin: 1rem 0;
 }
