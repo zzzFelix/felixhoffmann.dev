@@ -9,6 +9,11 @@
   color: var(--text-color);
 }
 
+*:focus-visible {
+  outline: dashed var(--signal-red) 3px;
+  outline-offset: 5px;
+}
+
 body {
   margin: 0;
   display: grid;
