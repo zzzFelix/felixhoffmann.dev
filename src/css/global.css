@@ -12,7 +12,7 @@
 body {
   margin: 0;
   display: grid;
-  background-color: #ffffff;
+  background-color: var(--background-pink);
 }
 
 .content-wrapper {
@@ -23,6 +23,7 @@ body {
 
 section {
   padding: 0 1rem;
+  margin: 1rem 0;
 }
 
 h3 {
