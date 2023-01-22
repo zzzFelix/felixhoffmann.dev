@@ -110,13 +110,11 @@ header .astronaut {
 
 @media (max-width: 500px) {
     nav ul {
-        display: grid;
-        justify-content: center;
-        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
     }
 
     nav li {
-        margin-left: 0;
+        margin: 0 1rem;
         text-align: center;
     }
 
