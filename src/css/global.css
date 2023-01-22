@@ -50,6 +50,13 @@ a {
   color: var(--highlight-color);
 }
 
+a[target=_blank]::after {
+  content: url(/src/img/external-link.svg);
+  width: 0.8em;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
 a:hover {
   text-decoration: underline;
 }
