@@ -7,14 +7,11 @@
     grid-template-areas:
         "h3 h3 h3"
         "snackathon iteraweb book-sort";
+    grid-gap: 0 4rem;
 }
 
 #projects h3 {
     grid-area: h3;
-}
-
-#projects article {
-    padding: 0 3rem 2rem;
 }
 
 #projects #book-sort {
@@ -54,27 +51,7 @@ img#success:focus {
     content: url(/src/img/flame-success.gif);
 }
 
-@media (max-width: 1080px) {
-    #projects {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto;
-        grid-template-areas:
-            "h3 h3"
-            "snackathon iteraweb"
-            "book-sort .";
-    }
-
-    #projects article {
-        padding: 0 0 2rem;
-        text-align: center;
-    }
-
-    #projects h3 {
-        text-align: center;
-    }
-}
-
-@media (max-width: 500px) {
+@media (max-width: 900px) {
     #projects {
         grid-template-columns: 100%;
         grid-template-rows: auto auto auto auto;
@@ -83,5 +60,10 @@ img#success:focus {
             "snackathon"
             "iteraweb"
             "book-sort";
+        grid-gap: 0;
+    }
+
+    #projects article:nth-of-type(even) {
+        margin: 4rem 0;
     }
 }
