@@ -1,0 +1,130 @@
+header {
+    background-color: var(--background-pink);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "nav nav"
+        "heading astronaut";
+    align-items: center;
+}
+
+.hidden-a11y-link {
+    position: absolute;
+    top: -5rem;
+    margin-left: -2rem;
+    transition: transform 0.5s;
+    padding: 1rem 1rem 0.5rem;
+    background: #04294f;
+    color: #ffffff;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.hidden-a11y-link:focus {
+    transform: translateY(4.5rem);
+}
+
+header .heading {
+    grid-area: heading;
+    justify-self: end;
+    margin-right: 2rem;
+}
+
+header h1,
+header h2 {
+    margin: 0;
+    color: var(--highlight-color);
+    text-transform: uppercase;
+    line-height: 150%;
+    letter-spacing: 0.1em;
+    align-self: start;
+    justify-self: end;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 1.8rem;
+}
+
+nav {
+    grid-area: nav;
+    align-self: start;
+    text-align: right;
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0 0 5rem 0;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-left: 2rem;
+}
+
+nav a {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 160%;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+@keyframes astronaut {
+    from {
+        transform: translateX(-0.1rem) translateY(-0.5rem);
+    }
+
+    to {
+        transform: rotate(10deg) translateX(0.1rem) translateY(0.5rem);
+    }
+}
+
+header #astronaut {
+    z-index: 1;
+    animation: astronaut 5s linear 0s infinite alternate;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+header .astronaut {
+    width: 100%;
+    grid-area: astronaut;
+    max-width: 15rem;
+    justify-self: start;
+}
+
+@media (max-width: 500px) {
+    nav ul {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    nav li {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    header h2 {
+        font-size: 1.2rem;
+    }
+}
