@@ -5,9 +5,9 @@
     grid-template-areas:
         ". h3"
         "img p";
-    grid-gap: 2rem;
+    grid-gap: 0 2rem;
     background-color: var(--background-yellow);
-    padding: 2rem;
+    padding: 4rem 2rem;
 }
 
 #about .p-wrapper {
