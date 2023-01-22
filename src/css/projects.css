@@ -33,7 +33,9 @@ img#no-connection,
 img#design-science,
 img#success {
     max-width: 320px;
+    height: 320px;
     width: 100%;
+    object-fit: contain;
     margin: -2rem 0;
 }
 
