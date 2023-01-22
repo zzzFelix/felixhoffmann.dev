@@ -5,12 +5,13 @@
     grid-template-areas:
         ". h3"
         "img p";
+    grid-gap: 2rem;
     background-color: var(--background-yellow);
     padding: 2rem;
 }
 
 #about .p-wrapper {
-    font-size: 2rem;
+    font-size: 1.5rem;
     grid-area: p;
 }
 
@@ -38,7 +39,7 @@
     }
 
     #about img {
-        justify-self: start;
+        justify-self: center;
         margin-left: 0;
         margin-top: 2rem;
     }

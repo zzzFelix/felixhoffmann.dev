@@ -1,0 +1,9 @@
+footer {
+    display: grid;
+    justify-content: end;
+}
+footer img {
+    width: 150px;
+    height: 150px;
+    transform: scaleX(-1);
+}
