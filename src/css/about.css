@@ -6,7 +6,7 @@
         ". h3"
         "img p";
     grid-gap: 0 2rem;
-    background-color: var(--background-yellow);
+    background-color: var(--background-sand);
     padding: 4rem 2rem;
 }
 
