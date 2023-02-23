@@ -15,11 +15,28 @@
     grid-area: p;
 }
 
-#about img {
+#about p.socials {
+    display: grid;
+    grid-template-columns: 1.75rem auto;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+#about p.socials-first {
+    margin-top: 4rem;
+}
+
+#about p.socials img {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+#about img.profile {
     grid-area: img;
     justify-self: start;
     align-self: center;
     width: 12.5rem;
+    height: 12.5rem;
     margin-left: 1rem;
     filter: grayscale(100%);
 }
