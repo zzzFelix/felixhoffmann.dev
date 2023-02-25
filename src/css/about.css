@@ -54,7 +54,7 @@
             "img";
     }
 
-    #about img {
+    #about img.profile {
         justify-self: center;
         margin-left: 0;
         margin-top: 2rem;
