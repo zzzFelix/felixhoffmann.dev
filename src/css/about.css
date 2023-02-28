@@ -31,17 +31,35 @@
     height: 1.75rem;
 }
 
-#about img.profile {
+#about .img-wrapper {
     grid-area: img;
-    justify-self: start;
+    justify-items: center;
     align-self: center;
+    margin-left: 1rem;
+    display: grid;
+}
+
+#about .img-wrapper small {
+    text-align: center;
+    display: block;
+    color: var(--text-light);
+}
+
+#about img.profile {
     width: 12.5rem;
     height: 12.5rem;
-    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 
 #about h3 {
     grid-area: h3;
+}
+
+@media (max-width: 590px) {
+    #about img.profile {
+        width: 9rem;
+        height: 9rem;
+    }
 }
 
 @media (max-width: 530px) {
@@ -58,5 +76,7 @@
         justify-self: center;
         margin-left: 0;
         margin-top: 2rem;
+        width: 12.5rem;
+        height: 12.5rem;
     }
 }
