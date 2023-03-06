@@ -1,13 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@vercel/analytics': ^0.1.11
   vite: ^4.0.0
-  web-vitals: ^3.1.1
-
-dependencies:
-  '@vercel/analytics': 0.1.11
-  web-vitals: 3.1.1
 
 devDependencies:
   vite: 4.1.4
@@ -190,12 +184,6 @@ packages:
     dev: true
     optional: true
 
-  /@vercel/analytics/0.1.11:
-    resolution: {integrity: sha512-mj5CPR02y0BRs1tN3oZcBNAX9a8NxsIUl9vElDPcqxnMfP0RbRc9fI9Ud7+QDg/1Izvt5uMumsr+6YsmVHcyuw==}
-    peerDependencies:
-      react: ^16.8||^17||^18
-    dev: false
-
   /esbuild/0.16.17:
     resolution: {integrity: sha512-G8LEkV0XzDMNwXKgM0Jwu3nY3lSTwSGY6XbxM9cr9+s0T/qSV1q1JVPBGzm3dcjhCic9+emZDmMffkwgPeOeLg==}
     engines: {node: '>=12'}
@@ -332,7 +320,3 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
-
-  /web-vitals/3.1.1:
-    resolution: {integrity: sha512-qvllU+ZeQChqzBhZ1oyXmWsjJ8a2jHYpH8AMaVuf29yscOPZfTQTjQFRX6+eADTdsDE8IanOZ0cetweHMs8/2A==}
-    dev: false
