@@ -13,7 +13,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta charSet="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/favicon.png" />
         <link rel="preload" href="/flame-design-science.gif" as="image" />
         <link rel="preload" href="/flame-no-connection.gif" as="image" />
