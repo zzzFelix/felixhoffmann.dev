@@ -1,4 +1,15 @@
 :root {
+  --text-color: #1b1b1c;
+  --text-light: #525252;
+
+  --background-sand: #F7F5EB;
+  --background-pink: #EAC7C7;
+  --background-green: #BCEAD5;
+  --background-blue: #A0C3D2;
+
+  --highlight-color: #04294f;
+  --signal-red: #b20c4b;
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,13 +29,6 @@ body {
   margin: 0;
   display: grid;
   background-color: var(--background-pink);
-}
-
-.content-wrapper {
-  margin: 3rem 0;
-  max-width: 1180px;
-  justify-self: center;
-  font-size: 1.2rem;
 }
 
 @media (max-width: 500px) {
@@ -51,7 +55,7 @@ a {
 }
 
 a[target=_blank]::after {
-  content: url(/src/img/external-link.svg);
+  content: url(/external-link.svg);
   width: 0.8em;
   display: inline-block;
   margin-left: 0.5rem;

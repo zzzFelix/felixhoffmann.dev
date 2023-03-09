@@ -38,17 +38,17 @@ img#success {
 
 img#no-connection:hover,
 img#no-connection:focus {
-    content: url(/src/img/flame-no-connection.gif);
+    content: url(/flame-no-connection.gif);
 }
 
 img#design-science:hover,
 img#design-science:focus {
-    content: url(/src/img/flame-design-science.gif);
+    content: url(/flame-design-science.gif);
 }
 
 img#success:hover,
 img#success:focus {
-    content: url(/src/img/flame-success.gif);
+    content: url(/flame-success.gif);
 }
 
 @media (max-width: 900px) {

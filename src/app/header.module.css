@@ -1,4 +1,4 @@
-header {
+.header {
     background-color: var(--background-pink);
     padding: 2rem;
     display: grid;
@@ -25,14 +25,14 @@ header {
     transform: translateY(4.5rem);
 }
 
-header .heading {
+.header .heading {
     grid-area: heading;
     justify-self: end;
     margin-right: 2rem;
 }
 
-header h1,
-header h2 {
+.header h1,
+.header h2 {
     margin: 0;
     color: var(--highlight-color);
     text-transform: uppercase;
@@ -42,36 +42,36 @@ header h2 {
     justify-self: end;
 }
 
-h1 {
+.header h1 {
     font-style: normal;
     font-weight: 600;
     font-size: 2rem;
 }
 
-h2 {
+.header h2 {
     font-weight: 300;
     font-size: 1.8rem;
 }
 
-nav {
+.header nav {
     grid-area: nav;
     align-self: start;
     text-align: right;
     margin-bottom: 2rem;
 }
 
-nav ul {
+.header nav ul {
     padding: 0;
     margin: 0 0 5rem 0;
 }
 
-nav li {
+.header nav li {
     list-style: none;
     display: inline;
     margin-left: 2rem;
 }
 
-nav a {
+.header nav a {
     font-weight: 600;
     font-size: 1rem;
     line-height: 160%;
@@ -80,7 +80,7 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
+.header nav a:hover {
     text-decoration: underline;
 }
 
@@ -94,35 +94,36 @@ nav a:hover {
     }
 }
 
-header #astronaut {
+.header #astronaut {
     z-index: 1;
     animation: astronaut 5s linear 0s infinite alternate;
     animation-timing-function: linear;
     animation-fill-mode: both;
 }
 
-header .astronaut {
+.header .astronaut {
     width: 100%;
+    height: auto;
     grid-area: astronaut;
     max-width: 15rem;
     justify-self: start;
 }
 
 @media (max-width: 500px) {
-    nav ul {
+    .header nav ul {
         text-align: center;
     }
 
-    nav li {
+    .header nav li {
         margin-left: 0.8rem;
         text-align: center;
     }
 
-    header h1 {
+    .header h1 {
         font-size: 1.5rem;
     }
     
-    header h2 {
+    .header h2 {
         font-size: 1.2rem;
     }
 }
