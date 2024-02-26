@@ -11,3 +11,9 @@
 #talks article p {
     margin: 1rem 0;
 }
+
+#talks .video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    max-width: 30rem;
+}
