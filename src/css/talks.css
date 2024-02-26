@@ -1,10 +1,10 @@
 #talks {
-    background-color: var(--background-green);
+    background-color: var(--background-pink);
     padding: 4rem 2rem;
 }
 
 #talks article {
-    padding: 0.5rem 0;
+    padding: 0.5rem 0 2rem;
 }
 
 #talks article h4,
